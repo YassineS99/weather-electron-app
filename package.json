@@ -1,0 +1,23 @@
+{
+  "name": "weather-electron",
+  "version": "1.0.0",
+  "description": "A simple weather app built with Electron.",
+  "author": "Yassine Sadgui",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "com.yourname.weatherapp",
+    "productName": "Weather App",
+    "win": {
+      "target": "nsis",
+      "icon": "icon.ico"
+    }
+  },
+  "devDependencies": {
+    "electron": "^25.9.8",
+    "electron-builder": "^24.6.0"
+  }
+}
